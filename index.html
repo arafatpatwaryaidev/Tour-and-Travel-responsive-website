@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour and Travel responsive website</title>
+    <!-- font awesome cdn file links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- css custom file links -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <a href="#" class="logo">travel <span>.</span></a>
+
+        <nav class="navbar">
+
+            <ul>
+                <li><a data-scroll="home" href="#home" class="active">home</a></li>
+                <li><a data-scroll="feature" href="#feature">feature</a></li>
+                <li><a data-scroll="about"  href="#about">about</a></li>
+                <li><a data-scroll="gallery"  href="#gallery">gallery</a></li>
+                <li><a data-scroll="review"  href="#review">review</a></li>
+                <li><a data-scroll="blog"  href="#blog">blog</a></li>
+                <li><a data-scroll="contact" href="#contact">contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- responsive menu starts -->
+        <div class="fas fa-bars"></div>
+
+        <!-- responsive menu starts -->
+    </header>
+    <!-- header section ends  -->
+
+    <section id="home" class="home">
+
+        <div class="video">
+            <video src="./Photo/home-video.mp4" loop muted autoplay></video>
+        </div>
+
+        <div class="content">
+            <h1>explore new places, <br> adventure awaits</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla ipsam cupiditate sequi magni modi a
+                possimus aliquid. Amet, harum dicta?</p>
+        </div>
+
+        <div class="form-container">
+            <form action="">
+
+                <h3>search your destination</h3>
+
+                <span>location</span>
+                <input type="text" placeholder="place you want to visit">
+
+                <span>guest numbers</span>
+                <input type="number" placeholder="number of peoples">
+
+                <span>arrivals</span>
+                <input type="date">
+
+                <span>leaving</span>
+                <input type="date">
+
+                <input type="submit" value="search">
+            </form>
+        </div>
+    </section>
+    <!-- home section starts  -->
+
+  <!-- feature section starts -->
+ 
+    <section id="feature" class="feature">
+
+        <h1 class="heading"><span>f</span>eatured <span>l</span>ocations</h1>
+  
+           <div class="card-container">
+
+            <div class="card">
+                <span class="discount">-35%</span>
+                <img src="./Photo/featued-img-1.jpg" alt="featured">
+                <div class="content">
+                    <h3 class="title">hawaii</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dignissimos aperiam id rerum nobis pariatur nisi? Quam corrupti provident praesentium.</p>
+             
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+             <a href="#"><button class="btn">check out!</button></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <span class="discount">-25%</span>
+            <img src="./Photo/featued-img-2.jpg" alt="featured">
+            <div class="content">
+                <h3 class="title">cairo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dignissimos aperiam id rerum nobis pariatur nisi? Quam corrupti provident praesentium.</p>
+         
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+         <a href="#"><button class="btn">check out!</button></a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <span class="discount">-45%</span>
+        <img src="./Photo/featued-img-3.jpg" alt="featured">
+        <div class="content">
+            <h3 class="title">mumbai</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dignissimos aperiam id rerum nobis pariatur nisi? Quam corrupti provident praesentium.</p>
+     
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+    </div>
+     <a href="#"><button class="btn">check out!</button></a>
+    </div>
+</div>
+           </div>
+    <!-- jquery cdn file links  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- js custom file links -->
+    <script src="./style.js"></script>
+</body>
+
+</html>
