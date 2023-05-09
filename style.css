@@ -274,6 +274,109 @@
   object-fit: cover;
 }
 
+.about{
+  min-height: 100vh;
+}
+
+.about .row{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about .row .image img{
+  height: 65vh;
+  width: 40vw;
+}
+
+.about .row .content h3{
+  font-size: 4rem;
+  color: var(--span);
+}
+
+.about .row .content p{
+  font-size: 1.9rem;
+  color: var(--bgColor);
+}
+
+.about .row .content .btn{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: .2s linear;
+  height: 4rem;
+  width: 18rem;
+  margin: 1rem;
+  color: var(--white);
+  background: var(--span);
+  font-size: 2rem;
+}
+
+.about .row .content .btn-one,
+.about .row .content .btn:hover{
+  background: none;
+  color: var(--span);
+  border: .2rem solid var(--span);
+  margin-right: 1rem;
+}
+
+.gallery{
+  min-height: 100vh;
+}
+
+.gallery .box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.gallery .box-container .box{
+  height: 20rem;
+  width: 30rem;
+  margin: 2rem;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.gallery .box-container .box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery .box-container .box .icons{
+  position: absolute;
+  top: 120%; left: 0;
+  background: linear-gradient(transparent, #333);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .2s linear;
+}
+
+.gallery .box-container .box:hover .icons {
+  opacity: 1;
+  top: 0;
+}
+
+.gallery .box-container .box .icons a{
+  color: #fff;
+  text-shadow: 0 .1rem .3rem #000;
+  font-size: 3rem;
+  padding-bottom: 2rem; 
+}
+
+.gallery .box-container .box .icons a:hover{
+  color: var(--span);
+}
 
 
 
@@ -339,7 +442,21 @@
         top: 5.5rem;
         opacity: 1;
     }
-    
+    .about .row{
+      flex-flow: column;
+    }
+
+    .about .row .image  img{
+      width: 60vw;
+    }
+
+    .about .row .content{
+      text-align: center;
+    }
+    .about .row .content .btn-one{
+      margin-right: 0;
+    }
+
   }
   @media(max-width:500px){
 
